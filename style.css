@@ -1,0 +1,50 @@
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+
+.l1, .l2, .l3 {
+    display: block;
+    margin: 0;
+}
+
+.l1 {
+    margin-top: 21rem;
+    margin-left: 46rem;
+    width: 15.5rem;
+    height: 12.5rem;
+}
+
+.l1 path {
+    fill: red;
+    stroke: green;
+    stroke-width: 0.1875rem;
+}
+
+.l2 {
+    margin-top: -5rem;
+    margin-left: 39rem;
+    width: 13.5rem;
+    height: 12.5rem;
+}
+
+.l2 path {
+    fill: red;
+    stroke: green;
+    stroke-width: 0.1875rem;
+}
+
+.l3 {
+    margin-top: -10rem;
+    margin-left: 41.5rem;
+    width: 26.5rem;
+    height: 12.5rem;
+}
+
+.l3 path {
+    fill: red;
+    stroke: green;
+    stroke-width: 0.1875rem;
+}
