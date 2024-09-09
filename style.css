@@ -1,50 +1,69 @@
 body {
     height: 100vh;
+    display: flex;
     margin: 0;
     padding: 0;
 }
 
+.menuBar {
+    height: 100%;
+    width: 100%;
+    background-color: aqua;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    background-color: aquamarine;
+}
+
+.leg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .l1, .l2, .l3 {
-    display: block;
-    margin: 0;
+    width: 30%; 
 }
 
 .l1 {
-    margin-top: 21rem;
-    margin-left: 46rem;
-    width: 15.5rem;
-    height: 12.5rem;
-}
-
-.l1 path {
-    fill: red;
-    stroke: green;
-    stroke-width: 0.1875rem;
+    height: 7rem;
+    width: 13rem;
+    margin-top: 24rem;
+    margin-left: 7rem;
 }
 
 .l2 {
-    margin-top: -5rem;
-    margin-left: 39rem;
-    width: 13.5rem;
-    height: 12.5rem;
-}
-
-.l2 path {
-    fill: red;
-    stroke: green;
-    stroke-width: 0.1875rem;
+    height: 28rem;
+    margin-top: -13rem;
+    margin-left: -7rem;
 }
 
 .l3 {
-    margin-top: -10rem;
-    margin-left: 41.5rem;
-    width: 26.5rem;
-    height: 12.5rem;
+    height: 11rem;
+    width: 10rem;
+    margin-top: -17rem;
+    margin-left: 7rem;
 }
 
-.l3 path {
+svg path {
     fill: red;
     stroke: green;
     stroke-width: 0.1875rem;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .menuBar {
+        width: 30%;
+    }
+    .main {
+        width: 70%;
+    }
 }
