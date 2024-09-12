@@ -42,6 +42,12 @@ body {
     width: 7rem;
 }
 
+#svgS{
+    height: 33rem;
+    width: 9rem;
+    margin-top: 5rem;
+    margin-left: 24rem;
+}
 /*leg */
 .leg {
     display: flex;
