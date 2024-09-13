@@ -133,12 +133,31 @@ body {
     position: relative;
     z-index: 3;
 }
+#RL {
+    height: 13rem;
+    width: 9rem;
+    margin-top: 29rem;
+    margin-left: 15rem;
+    position: relative;
+    z-index: 4;
+}
+
+#LL {
+    height: 6rem;
+    width: 6rem;
+    margin-top: 44rem;
+    margin-left: 23rem;
+    position: relative;
+    z-index: 0;
+}
 
 #l2 {
     height: 12rem;
     margin-top: 36rem;
     margin-left: 15rem;
     transform: rotate(2deg);
+    position: relative;
+    z-index: 2;
 }
 
 #l3 {
