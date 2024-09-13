@@ -87,6 +87,37 @@ body {
     margin-top: 20rem;
     margin-left: 5rem;
 }
+
+#LH{
+    height: 8rem;
+    width: 5.5rem;
+    margin-top: 15rem;
+    margin-left: 4.6rem;
+}
+
+#LH2{
+    height: 7rem;
+    width: 4.5rem;
+    margin-top: 20rem;
+    margin-left: 7.6rem;
+    position: relative;
+    z-index: 5;
+}
+#RH{
+    height: 6rem;
+    width: 6.5rem;
+    margin-top: 15rem;
+    margin-left: 39.6rem;
+}
+
+#RH2{
+    height: 7rem;
+    width: 7.5rem;
+    margin-top: 28.6rem;
+    margin-left: 37.6rem;
+}
+
+
 /*leg */
 
 .leg div{
