@@ -21,3 +21,12 @@ function updateStyles() {
         path.setAttribute("stroke", borderColor);
     });
 }
+
+
+const images = ["pheta1.png", "pheta2.png"]; // List of image file names
+let currentIndex = 0;
+
+document.getElementById("nextBtn").onclick = function() {
+  currentIndex = (currentIndex + 1) % images.length; // Loop to the next image
+  document.getElementById("image").src = images[currentIndex]; // Update the img src
+};
