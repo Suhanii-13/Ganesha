@@ -3,169 +3,80 @@ body {
     display: flex;
     margin: 0;
     padding: 0;
+    transition: all 0.3s ease;
+    position: relative;
+    background-color: aquamarine;
+    overflow: hidden;
 }
 
 .menuBar {
     height: 100%;
-    width: 100%;
+    width: 0; 
     background-color: aqua;
+    overflow: hidden;
+    transition: width 0.3s ease;
 }
 
 .main {
     height: 100%;
-    width: 100%;
-    background-color: aquamarine;
-}
-/* face */
-.top div{
-    height: 0;
-    width: 0;
-}
-#svgF{
-    margin-top: 11rem;
-    margin-left: 20rem;
-    height: 10rem;
-    width: 12rem;
+    width: 100%; 
+    background-color: rgb(11, 89, 63);
+    transition: width 0.3s ease;
 }
 
-#svgRE{
-    margin-top: 12rem;
-    margin-left: 30.8rem;
-    height: 8rem;
-    width: 4rem;
+.menuBtn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
 }
 
-#svgLE{
-    margin-top: 1rem;
-    margin-left: 17em;
-    height: 32rem;
-    width: 6rem;
+.ganesha {
+    width: 31.4rem;
+    transition: transform 0.3s ease;
+    transform: translateX(31.4rem);
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
-/* #svgS{
-    height: 33rem;
-    width: 9rem;
-    margin-top: 5rem;
-    margin-left: 24rem;
-} */
-#svgS {
-    height: 33rem;
-    width: 9rem;
-    margin-top: 5rem;
-    margin-left: 24rem;
-    z-index: 2; 
-    position: relative; 
+.menu-open .menuBar {
+    width: 55rem; 
 }
 
-
-
-/*body*/
-.body div{
-    height: 0;
-    width: 0;
+.menu-open .main {
+    width: calc(100% - 20rem);
 }
 
-#svgB {
-    height: 25rem;
-    width: 31rem;
-    margin-top: 14.5rem;
-    margin-left: 10rem;
-    z-index: 1; 
-    position: relative; 
+.menu-open .ganesha {
+    transform: translateX(10.5rem); 
 }
 
-#svgRH{
-    height: 10rem;
-    width: 11rem;
-    margin-left: 33rem;
-    margin-top: 19rem;
+@media only screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .menu-open .menuBar {
+        width: 100%; 
+    }
+
+    .menu-open .main {
+        width: 100%; 
+    }
 }
 
-#svgLH{
-    height: 9rem;
-    width: 12rem;
-    margin-top: 20rem;
-    margin-left: 5rem;
-}
-
-#LH{
-    height: 8rem;
-    width: 5.5rem;
-    margin-top: 15rem;
-    margin-left: 4.6rem;
-}
-
-#LH2{
-    height: 7rem;
-    width: 4.5rem;
-    margin-top: 20rem;
-    margin-left: 7.6rem;
-    position: relative;
-    z-index: 5;
-}
-#RH{
-    height: 6rem;
-    width: 6.5rem;
-    margin-top: 15rem;
-    margin-left: 39.6rem;
-}
-
-#RH2{
-    height: 7rem;
-    width: 7.5rem;
-    margin-top: 28.6rem;
-    margin-left: 37.6rem;
-}
-
-
-/*leg */
-
-.leg div{
-    height: 0;
-    width: 0;
-}
-
-#l1 {
-    height: 14rem;
-    width: 14rem;
-    margin-top: 29rem;
-    margin-left: 23rem;
-    position: relative;
-    z-index: 3;
-}
-#RL {
-    height: 13rem;
-    width: 9rem;
-    margin-top: 29rem;
-    margin-left: 15rem;
-    position: relative;
-    z-index: 4;
-}
-
-#LL {
-    height: 6rem;
-    width: 6rem;
-    margin-top: 44rem;
-    margin-left: 23rem;
-    position: relative;
-    z-index: 0;
-}
-
-#l2 {
-    height: 12rem;
-    margin-top: 36rem;
-    margin-left: 15rem;
-    transform: rotate(2deg);
-    position: relative;
-    z-index: 2;
-}
-
-#l3 {
-    height: 20rem;
-    width: 15rem;
-    margin-top: 35rem;
-    margin-left: 23rem;
-    transform: rotate(2deg);
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .menuBar {
+        width: 30%;
+    }
+    .main {
+        width: 70%;
+    }
 }
 
 
@@ -182,25 +93,4 @@ body {
     .main {
         width: 70%;
     }
-}
-
-
-#image{
-    height: 10rem;
-    width: 17rem;
-    position: relative;
-    z-index: 0;
-    margin-top: 6rem;
-    transform: rotate(-7deg);
-    margin-left: 15rem;
-}
-
-#path{
-    height: 10rem;
-    width: 20rem;
-    transform: rotate(3deg);
-    margin: 1rem 1rem 1rem 1rem;
-    position: relative;
-    z-index: 10;
-    
 }

@@ -1,0 +1,129 @@
+.top div,
+.body div,
+.leg div {
+    height: 0;
+    width: 0;
+}
+/* Face */
+
+#svgF {
+    margin: 11rem 0 0 20rem;
+    height: 10rem;
+    width: 12rem;
+}
+
+#svgRE {
+    margin: 12rem 0 0 30.8rem;
+    height: 8rem;
+    width: 4rem;
+}
+
+#svgLE {
+    margin: 1rem 0 0 17em;
+    height: 32rem;
+    width: 6rem;
+}
+
+#svgS {
+    margin: 5rem 0 0 24rem;
+    height: 33rem;
+    width: 9rem;
+    z-index: 2;
+    position: relative;
+}
+
+/* Body */
+#svgB {
+    margin: 14.5rem 0 0 10rem;
+    height: 25rem;
+    width: 31rem;
+    z-index: 1;
+    position: relative;
+}
+
+#svgRH {
+    margin: 19rem 0 0 33rem;
+    height: 10rem;
+    width: 11rem;
+}
+
+#svgLH {
+    margin: 20rem 0 0 5rem;
+    height: 9rem;
+    width: 12rem;
+}
+
+#LH {
+    margin: 15rem 0 0 4.6rem;
+    height: 8rem;
+    width: 5.5rem;
+}
+
+#LH2 {
+    margin: 20rem 0 0 7.6rem;
+    height: 7rem;
+    width: 4.5rem;
+    position: relative;
+    z-index: 5;
+}
+
+#RH {
+    margin: 15rem 0 0 39.6rem;
+    height: 6rem;
+    width: 6.5rem;
+}
+
+#RH2 {
+    margin: 28.6rem 0 0 37.6rem;
+    height: 7rem;
+    width: 7.5rem;
+}
+
+/* Leg */
+#l1 {
+    margin: 29rem 0 0 23rem;
+    height: 14rem;
+    width: 14rem;
+    position: relative;
+    z-index: 3;
+}
+
+#RL {
+    margin: 29rem 0 0 15rem;
+    height: 13rem;
+    width: 9rem;
+    position: relative;
+    z-index: 4;
+}
+
+#LL {
+    margin: 44rem 0 0 23rem;
+    height: 6rem;
+    width: 6rem;
+    position: relative;
+    z-index: 0;
+}
+
+#l2 {
+    margin: 36rem 0 0 15rem;
+    height: 12rem;
+    transform: rotate(2deg);
+    position: relative;
+    z-index: 2;
+}
+
+#l3 {
+    margin: 35rem 0 0 23rem;
+    height: 20rem;
+    width: 15rem;
+    transform: rotate(2deg);
+}
+
+#image {
+    margin: 6rem 0 0 15rem;
+    height: 10rem;
+    width: 17rem;
+    position: relative;
+    z-index: 0;
+    transform: rotate(-7deg);
+}
