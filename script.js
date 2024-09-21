@@ -32,9 +32,10 @@ document.getElementById("nextBtn").onclick = function() {
 
 
 //menubar
-const menuBtn = document.getElementById('menuBtn');
+// JavaScript to handle menu toggle
+const menuBtn = document.getElementById('menu-btn');
 const body = document.body;
 
 menuBtn.addEventListener('click', () => {
-  body.classList.toggle('menu-open');
+    body.classList.toggle('menu-open');
 });

@@ -5,16 +5,19 @@
     width: 0;
 }
 /* Face */
-
+.ganesha{
+    position: absolute;
+}
 #svgF {
     margin: 9rem 0 0 20rem;
     height: 12rem;
-    width: 14rem;
-
+    width: 13rem;
+    position: relative;
+    z-index: 1;
 }
 
 #svgRE {
-    margin: 12rem 0 0 32.8rem;
+    margin: 12.1rem 0 0 31.8rem;
     height: 8rem;
     width: 4rem;
 }
@@ -24,6 +27,7 @@
     height: 31rem;
     width: 5.7rem;
     transform: rotate(14deg);
+    position: relative;
 }
 
 #svgS {
