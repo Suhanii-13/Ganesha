@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column; /* For mobile adjustment */
+    flex-direction: column;
     background-color: aquamarine;
 }
 
@@ -13,7 +13,6 @@ body {
     transition: all 0.3s ease;
 }
 
-/* Menu Bar */
 .menuBar {
     width: 0;
     height: 100%;
@@ -22,7 +21,6 @@ body {
     transition: width 0.3s ease;
 }
 
-/* Menu Button (Top-Right) */
 .menu-btn {
     position: absolute;
     top: 1rem;
@@ -41,48 +39,44 @@ body {
 }
 
 .menu-open .menuBar {
-    width: 26rem; /* Show full menu on larger screens */
+    width: 26rem; 
 }
 
 .menu-open .main {
-    width: calc(100% - 20rem); /* Adjust the main width when menu is open */
+    width: calc(100% - 20rem); 
 }
 
-/* SVG Ganesha Settings */
 .ganesha {
     position: absolute;
-    width: 31.4rem; /* Keep this width for large screens */
-    transform: translateX(30rem); /* Maintain your current margin */
+    width: 31.4rem; 
+    transform: translateX(30rem); 
     transition: transform 0.3s ease;
 }
 
-/* Responsive Adjustments for SVG */
 @media screen and (max-width: 1082px) {
     .ganesha {
-        transform: translateX(8rem); /* Reduce translateX for smaller screens */
+        transform: translateX(8rem); 
     }
 
-    /* Hide Menu Button */
     .menu-btn {
         display: none;
     }
 
-    /* Show Menu Bar at Bottom */
     .menuBar {
-        width: 100%; /* Full width at the bottom */
-        height: 5rem; /* Adjust the height */
+        width: 100%;
+        height: 5rem; 
         position: fixed;
-        bottom: 0; /* Stick to the bottom */
+        bottom: 0; 
         left: 0;
     }
 
     .main {
-        margin-bottom: 5rem; /* Adjust content to accommodate bottom menu bar */
+        margin-bottom: 5rem; 
     }
 }
 
 @media screen and (max-width: 1301px) {
     .ganesha {
-        transform: translateX(-3rem); /* Further reduce for tablet-sized screens */
+        transform: translateX(-3rem); 
     }
 }
