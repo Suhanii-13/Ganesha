@@ -32,7 +32,6 @@ document.getElementById("nextBtn").onclick = function() {
 
 
 //menubar
-// JavaScript to handle menu toggle
 const menuBtn = document.getElementById('menu-btn');
 const body = document.body;
 
