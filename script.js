@@ -20,16 +20,44 @@ function updateStyles() {
     });
 }
 
-
 //pheta
-const images = ["pheta1.png", "pheta2.png"];
+const images = ["pheta1.png", "pheta2.png", "pheta3.png"];
 let currentIndex = 0;
+
+const styles = [
+    {
+        margin: "1.5rem 0 0 13rem",
+        height: "12rem",
+        width: "20.4rem",
+        position: "relative",
+        zIindex: "2",
+        transform: "rotate(-7deg)"
+    },
+    {
+        margin: "1.5rem 0 0 13rem",
+        height: "12rem",
+        width: "20.4rem",
+        transform: "rotate(-7deg)",
+        zIndex: 2
+    },
+    {
+    margin: "-7.5rem 0 0 9rem",
+    height: "23rem",
+    width: "35.5rem",
+    transform: "rotate(-3deg)",
+    zIndex: 2
+  },
+  
+];
 
 document.getElementById("nextBtn").onclick = function() {
   currentIndex = (currentIndex + 1) % images.length;
-  document.getElementById("image").src = images[currentIndex]; 
+  const imgElement = document.getElementById("image");
+  imgElement.src = images[currentIndex];
+  
+  const currentStyle = styles[currentIndex % styles.length];
+  Object.assign(imgElement.style, currentStyle);
 };
-
 
 //menubar
 const menuBtn = document.getElementById('menu-btn');
