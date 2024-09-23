@@ -21,7 +21,7 @@ function updateStyles() {
 }
 
 //pheta
-const images = ["pheta1.png", "pheta2.png", "pheta3.png"];
+const images = ["../assets/pheta1.png", "../assets/pheta2.png", "../assets/pheta3.png"];
 let currentIndex = 0;
 
 const styles = [
