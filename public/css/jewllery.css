@@ -27,3 +27,21 @@
     width: 3rem;
     transform: rotate(222deg);
 }
+
+#Har{
+    margin-top: -22rem;
+    margin-bottom: 7rem;
+    margin-left: 21rem;
+    height: 15rem;
+    width: 14rem;
+    position: relative;
+    z-index: 4;
+}
+/* 
+for har3 margin-top: -24rem;
+margin-bottom: 8rem;
+margin-left: 19rem;
+height: 12rem;
+width: 17rem;
+position: relative;
+z-index: 4; */
