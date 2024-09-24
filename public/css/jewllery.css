@@ -37,11 +37,33 @@
     position: relative;
     z-index: 4;
 }
-/* 
-for har3 margin-top: -24rem;
-margin-bottom: 8rem;
-margin-left: 19rem;
-height: 12rem;
-width: 17rem;
-position: relative;
-z-index: 4; */
+
+#pheta {
+    margin: 1.5rem 0 0 13rem;
+    height: 12rem;
+    width: 20.5rem;
+    position: relative;
+    z-index: 2;
+    transform: rotate(-7deg);
+}
+
+#Har{
+    margin-top: -18rem;
+    margin-bottom: 9rem;
+    margin-left: 20rem;
+    height: 11rem;
+    width: 14rem;
+    position: relative;
+    z-index: 3;
+}
+
+#sondJ{
+    margin-top: -18rem;
+    margin-bottom: 9rem;
+    margin-left: 20rem;
+    height: 11rem;
+    width: 14rem;
+    position: relative;
+    z-index: 3;
+    transform: rotate(3deg);
+}

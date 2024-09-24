@@ -34,7 +34,7 @@
     margin: 6rem 0 0 24.3rem;
     height: 33rem;
     width: 11.2rem;
-    z-index: 2;
+    z-index: 4;
     position: relative;
 }
 
@@ -129,11 +129,3 @@
     transform: rotate(2deg);
 }
 
-#image {
-    margin: 1.5rem 0 0 13rem;
-    height: 12rem;
-    width: 20.5rem;
-    position: relative;
-    z-index: 2;
-    transform: rotate(-7deg);
-}
