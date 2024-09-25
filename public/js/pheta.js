@@ -7,7 +7,7 @@ const styles = [
         height: "12rem",
         width: "20.4rem",
         position: "relative",
-        zIndex: "2",
+        zIndex: "6",
         transform: "rotate(-7deg)"
     },
     {
@@ -15,14 +15,14 @@ const styles = [
         height: "12rem",
         width: "20.4rem",
         transform: "rotate(-7deg)",
-        zIndex: 2
+        zIndex: "6"
     },
     {
         margin: "-7.5rem 0 0 9rem",
         height: "23rem",
         width: "35.5rem",
         transform: "rotate(-3deg)",
-        zIndex: 2
+        zIndex: "6"
     },
 ];
 

@@ -43,7 +43,7 @@
     height: 12rem;
     width: 20.5rem;
     position: relative;
-    z-index: 2;
+    z-index: 6;
     transform: rotate(-7deg);
 }
 
@@ -58,14 +58,14 @@
 }
 
 #sondJ{
-    margin-top: -18rem;
-    margin-bottom: 9rem;
-    margin-left: 20rem;
-    height: 11rem;
-    width: 14rem;
+    margin-top: -22rem;
+    margin-bottom: 19rem;
+    margin-left: 25.4rem;
+    height: 7rem;
+    width: 7rem;
     position: relative;
-    z-index: 3;
-    transform: rotate(3deg);
+    z-index: 5;
+    transform: rotate(30deg);
 }
 
 #trishul1{
@@ -88,4 +88,59 @@
     position: relative;
     z-index: 0;
     transform: rotate(6deg);
+}
+
+#lace1{
+    margin-top: -9.1rem;
+    margin-bottom: 17rem;
+    margin-left: 20.6rem;
+    height: 5rem;
+    width: 3.7rem;
+    position: relative;
+    z-index: 4;
+    transform: rotate(6deg);
+}
+
+#lace2{
+    margin-top: -17.1rem;
+    margin-bottom: 2rem;
+    margin-left: 33.6rem;
+    height: 16rem;
+    width: 3.7rem;
+    position: relative;
+    z-index: 4;
+    transform: rotate(15deg)
+}
+
+#shela1{
+    margin-top: -11.1rem;
+    margin-bottom: 2rem;
+    margin-left: 18.6rem;
+    height: 16rem;
+    width: 4.7rem;
+    position: relative;
+    z-index: 4;
+    transform: rotate(5deg);
+}
+
+#shela2{
+    margin-top: -19.6rem;
+    margin-bottom: 2rem;
+    margin-left: 11.6rem;
+    height: 18rem;
+    width: 6.7rem;
+    position: relative;
+    z-index: 2;
+    transform: rotate(2deg);
+}
+
+#shela3{
+    margin-top: -10.1rem;
+    margin-bottom: 2rem;
+    margin-left: 35.6rem;
+    height: 16rem;
+    width: 8.7rem;
+    position: relative;
+    z-index: 2;
+    transform: rotate(6deg)
 }
