@@ -10,16 +10,17 @@ const trishulImages = [
             height: "8rem",
             width: "5rem",
             zIndex: "4",
-            transform: "rotate(10deg)"
+            transform: "rotate(10deg)",
         },
         styles2: {
             marginTop: "-21rem",
             marginBottom: "17rem",
-            marginLeft: "39.6rem",
+            marginLeft: "40.3rem",
             height: "8rem",
             width: "6rem",
             zIndex: "0",
-            transform: "rotate(6deg)"
+            transform: "rotate(6deg)",
+            transform: "scaleX(-1)"
         }
     },
     // Second set of images (to switch to)
@@ -33,16 +34,17 @@ const trishulImages = [
             height: "9rem",
             width: "6rem",
             zIndex: "4",
-            transform: "rotate(-8deg)"
+            transform: "rotate(-8deg)",
         },
         styles2: {
             marginTop: "-20rem",
             marginBottom: "16rem",
-            marginLeft: "40rem",
+            marginLeft: "38.8rem",
             height: "7rem",
             width: "7rem",
             zIndex: "1",
-            transform: "rotate(3deg)"
+            transform: "rotate(3deg)",
+            transform: "scaleX(-1)"
         }
     }
 ];
