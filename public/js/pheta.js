@@ -26,15 +26,19 @@ const styles = [
     },
 ];
 
-document.getElementById("nextPheta").onclick = function() {
-  currentIndex++;
-  if (currentIndex === images.length) {
-    currentIndex = 0;
-  }
-  
-  const imgElement = document.getElementById("pheta");
-  imgElement.src = images[currentIndex];
-  
-  const currentStyle = styles[currentIndex];
-  Object.assign(imgElement.style, currentStyle);
-};
+const buttons = document.getElementsByClassName("nextPheta");
+
+for (let i = 0; i < buttons.length; i++) {
+    buttons[i].onclick = function() {
+        currentIndex++;
+        if (currentIndex === images.length) {
+            currentIndex = 0;
+        }
+
+        const imgElement = document.getElementsByClassName("pheta")[0]; 
+        imgElement.src = images[currentIndex];
+
+        const currentStyle = styles[currentIndex];
+        Object.assign(imgElement.style, currentStyle);
+    };
+}
