@@ -1,6 +1,5 @@
 .menuBar {
-    width: 0;
-    height: 45%;
+    width: 25rem;
     margin-top: 15rem;
     overflow: hidden;
     transition: width 0.3s ease;
@@ -11,6 +10,7 @@
     box-shadow: -3px 0 10px rgba(0, 0, 0, 0.2); 
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px; 
+    transition: width 0.3s; 
 }
 
 .menu-btn {
@@ -42,6 +42,18 @@
     width: calc(100% - 20rem); 
 }
 
+.menuBar h3 {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.menuBar h5 {
+    margin-left: 2rem;
+}
+
+.menuBar Label  {
+    margin-left: 2rem;
+}
 .selection-item {
     display: flex;
     align-items: center; 
@@ -58,3 +70,57 @@
 
 
 
+
+@media screen and (max-width: 1140px) {
+    .menuBar {
+        width: 15rem; /* Adjust width to 25% for smaller screens */
+        margin-top: 15rem; /* Optional: adjust top margin */
+    }
+
+    .menuBar h3 {
+        padding: 0.3rem; /* Adjust padding */
+        font-size: 1.3rem;
+    }
+
+    .menuBar h5, .menuBar label {
+        margin-left: 1rem; /* Reduced margin */
+        font-size: 0.9rem; /* Adjusted font size */
+    }
+
+    .selection-item button {
+        margin-right: 1rem; /* Adjust button margin */
+    }
+
+    .selection-item h5 {
+        margin-left: 1rem; /* Adjust header margin */
+        font-size: 0.9rem; /* Adjusted font size */
+    }
+}
+
+@media screen and (max-width: 984px) {
+    .menuBar {
+        width: 10rem; /* Adjust width to 25% for smaller screens */
+        margin-top: 15rem; /* Optional: adjust top margin */
+    }
+
+    .menuBar h3 {
+        padding: 0.3rem; /* Adjust padding */
+        font-size: 1.3rem;
+    }
+
+    .menuBar h5, .menuBar label {
+       display: none;
+    }
+
+     .selection-item #nextPheta {
+        content: 'Choose Pheta';
+     }
+    .selection-item button {
+        margin-right: 1rem; /* Adjust button margin */
+    }
+
+    .selection-item h5 {
+        margin-left: 1rem; /* Adjust header margin */
+        font-size: 0.9rem; /* Adjusted font size */
+    }
+}
