@@ -77,6 +77,13 @@
     margin-right: 3rem;
 }
 
+.selection-container .nextHar,.selection-container .nextPheta , .selection-container .nextTri{
+    display: inline-block;
+}
+
+.selection-container #pheta, .selection-container #har,.selection-container #tri{
+    display: none;
+}
 @media screen and (max-width: 1140px) {
     .menu-open .menuBar {
         width: 20rem;
@@ -133,13 +140,14 @@
         margin-top: 0;
         bottom: 0;
         right: 0;
-        padding: 1rem;
+        padding: 0rem;
         transition: height 0.3s ease;
     }
 
     .menu-open .menuBar {
         height: 5rem;
         width: 100%;
+        padding: 1rem;
     }
 
     .menuBar hr,   .menuBar h3,   .menuBar label,   .selection-item h5,  .menuBar h5 {
