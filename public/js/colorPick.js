@@ -13,18 +13,15 @@ function updateStyles() {
 
 }
 
-// const colorPicker = document.getElementById('bg');
-//     const body = document.body;
-
-//     colorPicker.addEventListener('input', function() {
-//         const selectedColor = colorPicker.value;
-
-//         body.style.backgroundImage = `
-//             url("../assets/bg.png"), 
-//             radial-gradient(
-//                 circle, 
-//                 rgba(173, 216, 230, 0.5) 30%,  /* Light blue center remains */
-//                 ${selectedColor} 80%           /* Update second color */
-//             )
-//         `;
-//     });
+const colorPicker = document.getElementById('bg').addEventListener("input", UpdatebgColor);
+     function UpdatebgColor(){
+          const body = document.body;
+          const bg = document.getElementById("bg").value;
+        
+          body.style.backgroundImage = `
+            url("../assets/bg.png"), 
+            radial-gradient(
+                circle, 
+                rgba(173, 216, 230, 0.5) 30%, 
+                ${bg} 80%)`;
+     }    

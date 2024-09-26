@@ -113,6 +113,27 @@
     transform: rotate(15deg)
 }
 
+#lace3{
+    margin-top: -22.1rem;
+    margin-bottom: 12rem;
+    margin-left: 28.6rem;
+    height: 12rem;
+    width: 3.7rem;
+    position: relative;
+    z-index: 1;
+    transform: rotate(96deg);
+}
+#lace4{
+    margin-top: -14.1rem;
+    margin-bottom: 9rem;
+    margin-left: 22.6rem;
+    height: 7rem;
+    width: 2.7rem;
+    position: relative;
+    z-index: 3;
+    transform: rotate(235deg);
+}
+
 #shela1{
     margin-top: -24.1rem;
     margin-bottom: 9rem;

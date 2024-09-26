@@ -4,8 +4,6 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    
-    /* Background image stays the same */
     background-image: 
         url("../assets/bg.png"), 
         radial-gradient(
@@ -13,7 +11,6 @@ body {
             rgba(173, 216, 230, 0.5) 30%,  
             rgba(0, 113, 128, 0.9) 80%  
         );
-    
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
@@ -25,47 +22,12 @@ body {
     transition: all 0.3s ease;
 }
 
-.menuBar {
-    width: 0;
-    height: 100%;
-    background-color: aqua;
-    overflow: hidden;
-    transition: width 0.3s ease;
-    position: absolute;
-    right: 0; 
-}
-
-.menu-btn {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    width: 3rem;
-    height: 3rem;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-    z-index: 10;
-}
-
-.menu-open .menuBar {
-    width: 26rem;
-}
-
-.menu-open .main {
-    margin-right: 20rem;
-    width: calc(100% - 20rem); 
-}
-
 .ganesha {
     position: absolute;
-    width: 31.4rem; 
+    width: 0rem;
     margin-top: 1rem;
-    transform: translateX(30rem); 
+    margin-left: -12rem;
+    transform: translateX(30rem);
     transition: transform 0.3s ease;
 }
 
@@ -96,17 +58,3 @@ body {
         transform: translateX(-3rem); 
     }
 }
-
-/* .background-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 205vh;
-    height: 100vh;
-    object-fit: cover;
-    z-index: -1;
-    margin-top: -10rem;
-    margin-left: -34rem;
-    overflow: hidden;
-} */
-
