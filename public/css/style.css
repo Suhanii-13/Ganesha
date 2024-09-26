@@ -36,3 +36,9 @@ body {
         margin-left: -35rem;
     }
 }
+
+@media screen and (max-width:1143px) {
+    .ganesha{
+        margin-left: -40rem;
+    }
+}

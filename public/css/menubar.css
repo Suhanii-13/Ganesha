@@ -1,5 +1,6 @@
 .menuBar {
-    width: 25rem;
+    width: 0;
+    height: 47%;
     margin-top: 15rem;
     overflow: hidden;
     transition: width 0.3s ease;
@@ -10,11 +11,6 @@
     box-shadow: -3px 0 10px rgba(0, 0, 0, 0.2); 
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px; 
-    transition: width 0.3s; 
-}
- 
-#turban {
-    display: none; /* Hide the turban button by default */
 }
 
 .menu-btn {
@@ -34,11 +30,10 @@
     font-size: 2rem;
     border-radius: 50%;
     z-index: 10;
-    transition: background 0.3s ease;
 }
 
 .menu-open .menuBar {
-    width: 26rem;
+    width: 25rem;
 }
 
 .menu-open .main {
@@ -46,8 +41,14 @@
     width: calc(100% - 20rem); 
 }
 
+
+#turban, #har {
+    display: none;
+}
+
+
 .menuBar h3 {
-    padding: 1.5rem;
+    margin-top: 0.5rem;
     text-align: center;
 }
 
@@ -72,13 +73,15 @@
     margin-left: 2rem;
 }
 
+.selection-item input {
+    margin-right: 3rem;
+}
 
 @media screen and (max-width: 1140px) {
-    .menuBar {
-        width: 15rem;
+    .menu-open .menuBar {
+        width: 20rem;
         margin-top: 15rem;
     }
-
     .menuBar h3 {
         padding: 0.3rem; 
         font-size: 1.3rem;
@@ -91,12 +94,8 @@
 
     .selection-item button {
         margin-right: 1rem; 
-        display: none;
     }
 
-   .selection-item  .turban{
-        display:inline-block;
-    }
 
     .selection-item h5 {
         margin-left: 1rem; 
@@ -104,34 +103,74 @@
     }
 }
 
-@media screen and (max-width: 984px) {
+@media  screen and (max-width:998px) {
+    .menu-open .menuBar {
+        width: 15rem;
+        margin-top: 15rem;
+        overflow:scroll;
+    }
+
+    .menuBar #color1{
+        margin-left: 5rem;
+    }
+
+    .menuBar #color2{
+        margin-left: 3.3rem;
+    }
+
+    .selection-item input {
+        margin-left:3rem;
+    }
+    
+}
+
+@media screen and (max-width: 888px) {
     .menuBar {
-        width: 10rem; 
-        margin-top: 15rem; 
+        display: flex;
+        flex-wrap: nowrap;
+        width: 0;
+        height: 0;
+        margin-top: 0;
+        bottom: 0;
+        right: 0;
+        padding: 1rem;
+        transition: height 0.3s ease;
     }
 
-    .menuBar h3 {
-        padding: 0.3rem; 
-        font-size: 1.3rem;
-    }
-    .menuBar h5, .menuBar label {
-        display: none; 
+    .menu-open .menuBar {
+        height: 5rem;
+        width: 100%;
     }
 
-    .nextPheta {
-        display: none; 
+    .menuBar hr,   .menuBar h3,   .menuBar label,   .selection-item h5,  .menuBar h5 {
+        display: none;
     }
 
-    #turban {
+    .selection-container .nextHar,.selection-container .nextPheta , .selection-container .nextTri{
+        display: none;
+    }
+
+    .selection-container #pheta, .selection-container #har,.selection-container #tri{
         display: inline-block;
     }
 
-    .selection-item button {
-        margin-right: 1rem; 
+    .selection-container {
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 0;
     }
 
-    .selection-item h5 {
-        margin-left: 1rem;
-        font-size: 0.9rem; 
+    .selection-item {
+        flex: 0 0 auto;
+        margin-right: 1rem;
+        min-width: 4rem;
+    }
+
+    .selection-item button {
+        display: inline-block;
+        margin: 0.5rem 0;
+        width: auto;
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
     }
 }
