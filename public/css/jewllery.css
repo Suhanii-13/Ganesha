@@ -38,7 +38,7 @@
     z-index: 4;
 }
 
-.pheta {
+#pheta {
     margin: 1.5rem 0 0 13rem;
     height: 12rem;
     width: 20.5rem;
@@ -120,7 +120,7 @@
     height: 12rem;
     width: 3.7rem;
     position: relative;
-    z-index: 1;
+    z-index: 3;
     transform: rotate(96deg);
 }
 #lace4{
@@ -130,7 +130,7 @@
     height: 7rem;
     width: 2.7rem;
     position: relative;
-    z-index: 3;
+    z-index: 7;
     transform: rotate(235deg);
 }
 
@@ -165,4 +165,37 @@
     position: relative;
     z-index: 2;
     transform: rotate(6deg)
+}
+
+#eye1{
+    margin-top: -9rem;
+    margin-bottom: 19rem;
+    margin-left: 27.5rem;
+    height: 4rem;
+    width: 5rem;
+    position: relative;
+    z-index: 11;
+    transform: rotate(13deg);
+}
+
+
+#eye2{
+    margin-top: -7.7rem;
+    margin-bottom: 8rem;
+    margin-left: 22rem;
+    height: 2rem;
+    width: 3rem;
+    position: relative;
+    z-index: 18;
+    transform: rotate(-19deg);
+    opacity: 1.5brightness(1.5);
+}
+
+#path{
+    margin-top: 23.7rem;
+    margin-left: -0.4rem;
+    height: 30rem;
+    width: 50.7rem;
+    position: relative;
+    z-index: 1;
 }

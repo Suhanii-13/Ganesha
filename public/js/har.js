@@ -43,3 +43,4 @@ document.getElementById("nextHar").onclick = function() {
     const currentStyle = stylesHar[currIndex];
     Object.assign(harEle.style, currentStyle);
 };
+

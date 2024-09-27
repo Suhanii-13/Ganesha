@@ -31,14 +31,66 @@ body {
     transition: transform 0.3s ease;
 }
 
-@media screen and (max-width:1143px) {
-    .ganesha{
-        margin-left: -35rem;
+@media screen and (max-width: 1540px) {
+    
+    .menu-open .ganesha {
+        transform: translateX(27rem);
     }
 }
 
-@media screen and (max-width:1143px) {
-    .ganesha{
-        margin-left: -40rem;
+@media screen and (max-width: 1432px) {
+    .menu-open .ganesha {
+        transform: translateX(25rem);
+        margin-top: 1rem;
     }
 }
+
+@media screen and (max-width: 1400px) {
+    .menu-open .ganesha {
+        transform: translateX(17rem);
+        margin-top: 2rem;
+    }
+    .ganesha {
+        transform: translateX(25rem);
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 1314px) {
+    .menu-open .ganesha {
+        transform: translateX(10rem);
+        margin-top: 2rem;
+    }
+    .ganesha {
+        transform: translateX(20rem);
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 1143px) {
+    .menu-open .ganesha {
+        transform: translateX(6rem);
+        margin-top: 2rem;
+    }
+    .ganesha {
+        transform: translateX(15rem);
+        margin-top: 2rem;
+    }
+
+    body{
+
+        background-image:radial-gradient(
+            circle, 
+            rgba(173, 216, 230, 0.5) 30%,  
+            rgba(0, 113, 128, 0.9) 80%  
+        );
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .ganesha {
+        transform: translateX(7rem);
+        margin-top: 2rem;
+    }
+}
+

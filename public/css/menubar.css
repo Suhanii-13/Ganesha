@@ -154,10 +154,14 @@
         display: none;
     }
 
-    .selection-container .nextHar,.selection-container .nextPheta , .selection-container .nextTri{
+  .selection-container .nextPheta , .selection-container .nextTri{
         display: none;
     }
 
+    .menuBar #color1 , .menuBar #color2{
+        margin-top: 0.7rem;
+        margin-right: 2rem;
+    }
     .selection-container #pheta, .selection-container #har,.selection-container #tri{
         display: inline-block;
     }
@@ -180,5 +184,14 @@
         width: auto;
         padding: 0.5rem 1rem;
         font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width:774px) {
+    .menu-btn{
+        display: none;
+    }
+    .menuBar{
+        display: none;
     }
 }
