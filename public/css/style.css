@@ -77,6 +77,10 @@ body {
         margin-top: 2rem;
     }
 
+    #mushak
+    {
+        display: none;
+    }
     body{
 
         background-image:radial-gradient(

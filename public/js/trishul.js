@@ -1,5 +1,4 @@
 const trishulImages = [
-    // First set of images (initial)
     {
         trishul1: "assets/trishulG.png",
         trishul2: "assets/trishul2G.png",
@@ -23,7 +22,6 @@ const trishulImages = [
             transform: "scaleX(-1)"
         }
     },
-    // Second set of images (to switch to)
     {
         trishul1: "assets/trishulS.png",
         trishul2: "assets/trishul2S.png",
