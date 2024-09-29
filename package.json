@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Suhanii-13/Ganesha#readme",
   "dependencies": {
+    "dotenv": "^16.4.5",
     "ejs": "^3.1.10",
     "ejs-mate": "^4.0.0",
     "express": "^4.21.0",
