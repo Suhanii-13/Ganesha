@@ -1,15 +1,20 @@
 {
-    "version": 2,
-    "builds": [
-      {
-     "src": "package.json",
-     "use": "@vercel/node"
-      }
-    ],
-    "routes": [
-      {
-     "src": "/(.*)",
-     "dest": "app.js"
-      }
-    ]
-     }
+  "version": 2,
+  "builds": [
+    {
+      "src": "app.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/app.js"
+    }
+  ],
+  "functions": {
+    "app.js": {
+      "runtime": "nodejs18.x"  // Change this if you're using a different version
+    }
+  }
+}
