@@ -21,4 +21,5 @@ The **Lord Ganesha** project is a web application created for the **Prathm Code 
 ## Frontend View
 
 Here is a preview of the Lord Ganesha webpage:
+![image](https://github.com/user-attachments/assets/34103494-fd54-41e0-9231-e31ee45b8b46)
 
